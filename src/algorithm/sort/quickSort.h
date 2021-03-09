@@ -30,7 +30,7 @@ void QuickSort(std::vector<int>& array, int start, int end)
 {
     int partiton = Partition(array, start, end);
     QuickSort(array, start, partiton - 1);
-    QuickSort(array, partiton = 1， end);
+    QuickSort(array, partiton + 1, end);
 }
 
 int Test()
