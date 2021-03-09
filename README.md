@@ -2,7 +2,9 @@
  ---------
 
 ### Websites
-DSA <a href ="https://www.programiz.com/dsa/stack">[here]</a>
+DSA <a href ="https://www.programiz.com/dsa/stack">[here]</a>  
+Visual algorithm <a href ="https://visualgo.net/zh">[here]</a>  
+Huihut interview <a href ="https://github.com/huihut/interview#algorithm">[here]</a>  
 
 ### Algorithm
 #### Sort
