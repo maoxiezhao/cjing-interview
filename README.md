@@ -16,3 +16,4 @@ HashTable <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/
 Queue <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/queue.h">[here]</a>  
 Stack <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/stack.h">[here]</a>  
 binaryHeap <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/binaryHeap.h">[here]</a>  
+binarySearchTree <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/binarySearchTree.h">[here]</a>  
