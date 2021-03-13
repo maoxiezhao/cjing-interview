@@ -11,7 +11,6 @@ public:
     class TreeImpl;
     struct NodeElement
 	{
-	public:
 		int mValue;
 		NodeElement* mLeft = nullptr;
 		NodeElement* mRight = nullptr;

@@ -17,3 +17,4 @@ Queue <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algo
 Stack <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/stack.h">[here]</a>  
 binaryHeap <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/binaryHeap.h">[here]</a>  
 binarySearchTree <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/binarySearchTree.h">[here]</a>  
+AVL Tree <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/avlTree.h">[here]</a>  
