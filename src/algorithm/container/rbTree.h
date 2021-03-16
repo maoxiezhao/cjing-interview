@@ -241,7 +241,7 @@ private:
 
     void EraseFixRB(NodeElement* node)
     {
-
+        // emmmm, too complex, just see: https://www.programiz.com/dsa/deletion-from-a-red-black-tree
     }
 
 public:
