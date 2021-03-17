@@ -9,13 +9,10 @@ B-Tree <a href ="https://www.cnblogs.com/lianzhilei/p/11250589.html">[here]</a>
 
 ****
 ### Algorithm
-------------------------------------------------
 #### Sort
 QuickSort <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/sort/quickSort.h">[here]</a>  
 MergeSort <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/sort/mergeSort.h">[here]</a>  
 topologicalSort <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/sort/topologicalSort.h">[here]</a>  
-
-------------------------------------------------
 #### Data Structures
 List <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/list.h">[here]</a>  
 HashTable <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/hashTable.h">[here]</a>  
@@ -27,3 +24,8 @@ AVL Tree <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/a
 B-Tree <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/bTree.h.h">[here]</a>  
 RedBlack Tree <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/rbTree.h">[here]</a>  
 Graph <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/graph.h">[here]</a> 
+
+****
+### Tips 
+C++对象模型 <a href ="https://www.cnblogs.com/QG-whz/p/4909359.html">[here]</a> 
+memmove和memcpy <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/tips/memmove_memcpy.md.h">[here]</a> 
