@@ -5,7 +5,7 @@
 基础算法和数据结构：DSA <a href ="https://www.programiz.com/dsa/stack">[here]</a>  
 可视化算法：Visual algorithm <a href ="https://visualgo.net/zh">[here]</a>  
 C++面试：Huihut interview <a href ="https://github.com/huihut/interview#algorithm">[here]</a>  
-B数实现：B-Tree <a href ="https://www.cnblogs.com/lianzhilei/p/11250589.html">[here]</a>
+BTree实现：B-Tree <a href ="https://www.cnblogs.com/lianzhilei/p/11250589.html">[here]</a>  
 C++对象模型 <a href ="https://www.cnblogs.com/QG-whz/p/4909359.html">[here]</a> 
 
 ****
@@ -14,7 +14,7 @@ C++对象模型 <a href ="https://www.cnblogs.com/QG-whz/p/4909359.html">[here]<
 QuickSort <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/sort/quickSort.h">[here]</a>  
 MergeSort <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/sort/mergeSort.h">[here]</a>  
 topologicalSort <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/sort/topologicalSort.h">[here]</a> 
-heapSort <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/sort/heapSort.h">
+heapSort <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/sort/heapSort.h">[here]</a> 
 
 #### Data Structures
 List <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/list.h">[here]</a>  
