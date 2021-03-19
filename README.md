@@ -13,7 +13,7 @@ C++对象模型 <a href ="https://www.cnblogs.com/QG-whz/p/4909359.html">[here]<
 #### Sort
 QuickSort <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/sort/quickSort.h">[here]</a>  
 MergeSort <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/sort/mergeSort.h">[here]</a>  
-topologicalSort <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/sort/topologicalSort.h">[here]</a> 
+topologicalSort <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/sort/topologicalSort.h">[here]</a>  
 heapSort <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/sort/heapSort.h">[here]</a> 
 
 #### Data Structures
