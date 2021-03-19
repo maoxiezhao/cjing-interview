@@ -17,7 +17,7 @@ memmove的处理措施：
 
 ----------------------------------------------------------------------------
 //实现代码如下：
- 
+```
 void * __cdecl memcpy(void * dst,const void * src,size_t count){
     void * ret = dst;
 
@@ -55,3 +55,4 @@ void * __cdecl memmove(void * dst,const void * src,size_t count){
 
     return(ret);
 }
+```
