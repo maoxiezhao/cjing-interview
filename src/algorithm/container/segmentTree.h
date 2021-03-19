@@ -92,7 +92,8 @@ public:
     // 区间修改
     void RangeUpdate(int root, int rangeLeft, int rangeRight, int value, int left, int right)
     {
-        if (rangeLeft <= left && rangeRight <= right)
+        // 当前区间在Range范围内
+        if (rangeLeft <= left &&  right <= rangeRight)
         {
             mNodeList[root].mValue += value * (right - left + 1);
             mLazyList[root] += value; //增加Lazy标记，表示本区间的Sum正确，子区间的Sum仍需要根据Lazy的值来调整
