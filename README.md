@@ -6,6 +6,7 @@
 C++面试：Huihut interview <a href ="https://github.com/huihut/interview#algorithm">[here]</a>  
 BTree实现：B-Tree <a href ="https://www.cnblogs.com/lianzhilei/p/11250589.html">[here]</a>  
 C++对象模型 <a href ="https://www.cnblogs.com/QG-whz/p/4909359.html">[here]</a> 
+线段树: SegmentTree <a href ="https://blog.csdn.net/zearot/article/details/48299459">[here]</a>  
 
 ****
 ### Algorithm
@@ -26,6 +27,7 @@ AVL Tree <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/a
 B-Tree <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/bTree.h.h">[here]</a>  
 RedBlack Tree <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/rbTree.h">[here]</a>  
 Graph <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/graph.h">[here]</a>  
+SegmentTree <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/segmentTree.h">[here]</a>  
 
 #### Pattern
 Singleton <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/pattern/singleton.h">[here]</a>  
