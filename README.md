@@ -5,7 +5,7 @@
 可视化算法：Visual algorithm <a href ="https://visualgo.net/zh">[here]</a>  
 C++面试：Huihut interview <a href ="https://github.com/huihut/interview#algorithm">[here]</a>  
 BTree实现：B-Tree <a href ="https://www.cnblogs.com/lianzhilei/p/11250589.html">[here]</a>  
-C++对象模型 <a href ="https://www.cnblogs.com/QG-whz/p/4909359.html">[here]</a> 
+C++对象模型 <a href ="https://www.cnblogs.com/QG-whz/p/4909359.html">[here]</a>  
 线段树: SegmentTree <a href ="https://blog.csdn.net/zearot/article/details/48299459">[here]</a>  
 
 ****
