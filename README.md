@@ -7,6 +7,8 @@ C++面试：Huihut interview <a href ="https://github.com/huihut/interview#algor
 BTree实现：B-Tree <a href ="https://www.cnblogs.com/lianzhilei/p/11250589.html">[here]</a>  
 C++对象模型 <a href ="https://www.cnblogs.com/QG-whz/p/4909359.html">[here]</a>  
 线段树: SegmentTree <a href ="https://blog.csdn.net/zearot/article/details/48299459">[here]</a>  
+C++面试总结（多方面） <a href ="https://www.cnblogs.com/QG-whz/p/4909359.html">[here]</a>  
+线段树: SegmentTree <a href ="https://blog.csdn.net/lxin_liu/category_8859795.html">[here]</a>  
 
 ****
 ### Algorithm
@@ -36,6 +38,13 @@ Observer <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/a
 
 ****
 ### DataBase
+数据库面试总结 <a href ="https://blog.csdn.net/lxin_liu/article/details/89328058">[here]</a>  
+SQL语句练习 <a href ="https://www.nowcoder.com/ta/sql?from=baidusql&bd_vid=11675627489460984601">[here]</a>  
+常用SQL语句 <a href ="https://blog.csdn.net/Ace_2/article/details/85002791">[here]</a>  
+common_sql <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/db/common_sqls.sql">[here]</a>  
+
+****
+### Linux
 
 ****
 ### Net
