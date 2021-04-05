@@ -66,3 +66,4 @@ C++可变模板参数及其遍历 <a href ="https://github.com/maoxiezhao/cjing-
 红点系统的树形结构实现 <a href ="https://zhuanlan.zhihu.com/p/231815818">[here]</a>  
 std::remove实现原理 <a href = "https://www.zhihu.com/question/407495201/answer/1346022594">[here]</a>  
 C++ CRTP介绍（模板类派生） <a href = "https://zhuanlan.zhihu.com/p/136258767">[here]</a>  
+条件变量和信号量的区别 <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/tips/条件变量和信号量的区别.md">[here]</a>   
