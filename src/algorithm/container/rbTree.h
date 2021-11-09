@@ -18,16 +18,16 @@
 //                 leaf has the same black-depth (the number of black nodes).
 
 template <class T>
-struct Comparator 
+struct Comparator
 {
-    inline bool operator()(const T& p_a, const T& p_b) const { return (p_a < p_b); }
+    inline bool operator()(const T &p_a, const T &p_b) const { return (p_a < p_b); }
 };
 
-template<typename KeyT, typename ValueT, class C = Comparator<K>>
+template <typename KeyT, typename ValueT, class C = Comparator<KeyT>>
 class RBTree
 {
 private:
-    enum Color 
+    enum Color
     {
         RED,
         BLACK,
@@ -38,18 +38,18 @@ private:
     {
         // base member
         Color mColor = BLACK;
-        NodeElement* mLeft = nullptr;
-        NodeElement* mRight = nullptr;
+        NodeElement *mLeft = nullptr;
+        NodeElement *mRight = nullptr;
         KeyT mkey;
         ValueT mValue;
-        RBTreeImpl& mImpl;
+        RBTreeImpl &mImpl;
 
         // external member
-        NodeElement* mParent = nullptr;
-        NodeElement* mNext = nullptr;
-        NodeElement* mPrev = nullptr;
+        NodeElement *mParent = nullptr;
+        NodeElement *mNext = nullptr;
+        NodeElement *mPrev = nullptr;
 
-        NodeElement(RBTreeImpl& impl) : mImpl(impl) {}
+        NodeElement(RBTreeImpl &impl) : mImpl(impl) {}
 
         /////////////////////////////////////////////////////
         // methods
@@ -58,45 +58,49 @@ private:
             mColor = color;
         }
 
-        NodeElement* GetPredecessor()const 
+        NodeElement *GetPredecessor() const
         {
-            NodeElement* ret = nullptr;
+            NodeElement *ret = nullptr;
             // if left is not null, find maximum from left child
             if (mLeft != nullptr)
             {
                 ret = mLeft;
-                while (ret->mRight != nullptr) {
+                while (ret->mRight != nullptr)
+                {
                     ret = ret->mRight;
                 }
             }
             else
             {
                 // 否则获取作为左节点时的父节点
-                while (ret == ret->mParent->mLeft) {
-					ret = ret->parent;
-				}
+                while (ret == ret->mParent->mLeft)
+                {
+                    ret = ret->parent;
+                }
                 return ret->mParent == impl.mRoot ? nullptr : ret->mParent;
             }
             return ret;
         }
 
-        NodeElement* GetSuccessor()const 
+        NodeElement *GetSuccessor() const
         {
-            NodeElement* ret = nullptr;
+            NodeElement *ret = nullptr;
             // if right is not null, find successor from right child
             if (mRight != nullptr)
             {
                 ret = mRight;
-                while (ret->mLeft != nullptr) {
+                while (ret->mLeft != nullptr)
+                {
                     ret = ret->mLeft;
                 }
             }
             else
             {
                 // 否则获取作为左节点时的父节点
-                while (ret == ret->mParent->mRight) {
-					ret = ret->parent;
-				}
+                while (ret == ret->mParent->mRight)
+                {
+                    ret = ret->parent;
+                }
                 return ret->mParent == impl.mRoot ? nullptr : ret->mParent;
             }
             return ret;
@@ -104,7 +108,7 @@ private:
     };
     struct RBTreeImpl
     {
-        NodeElement* mRoot = nullptr;
+        NodeElement *mRoot = nullptr;
         int mSize = 0;
 
         void CreateRoot()
@@ -116,55 +120,63 @@ private:
     };
     RBTreeImpl mImpl;
 
-   //  [3]           5
+    //  [3]           5
     //  / \    =>    / \
     // 2   5        3   6
     //    / \      / \ 
     //   4   6    2   4
-    void LeftRotate(NodeElement* node)
+    void LeftRotate(NodeElement *node)
     {
-        NodeElement* r = node->mRight;
-        if (!r) {
+        NodeElement *r = node->mRight;
+        if (!r)
+        {
             return;
         }
         node->mRight = r->mLeft;
-        if (r->mLeft) {
+        if (r->mLeft)
+        {
             r->mLeft->mParent = node;
         }
 
         r->mParent = node->mParent;
-        if (node == node->mParent->mLeft) {
+        if (node == node->mParent->mLeft)
+        {
             node->mParent->mLeft = r;
         }
-        else {
+        else
+        {
             node->mParent->mRight = r;
         }
 
         r->mLeft = node;
         node->mParent = r;
-    }   
+    }
 
     //  [4]           2
     //  / \    =>      \
     // 2   5            4
     //  \              / \
     //   3            3   5
-    void RightRotate(NodeElement* node)
+    void RightRotate(NodeElement *node)
     {
-        NodeElement* left = node->mRight;
-        if (!left) {
+        NodeElement *left = node->mRight;
+        if (!left)
+        {
             return;
         }
         node->mLeft = left->mRight;
-        if (left->mRight) {
+        if (left->mRight)
+        {
             left->mRight->mParent = node;
         }
 
         left->mParent = node->mParent;
-        if (node == node->mParent->mLeft) {
+        if (node == node->mParent->mLeft)
+        {
             node->mParent->mLeft = left;
         }
-        else {
+        else
+        {
             node->mParent->mRight = left;
         }
 
@@ -172,11 +184,11 @@ private:
         node->mParent = left;
     }
 
-    void InsertFixRB(NodeElement* newNode)
+    void InsertFixRB(NodeElement *newNode)
     {
-        NodeElement* node = newNode;
-        NodeElement* parent = node->mParent;
-        NodeElement* grandParent;
+        NodeElement *node = newNode;
+        NodeElement *parent = node->mParent;
+        NodeElement *grandParent;
 
         while (parent->mColor == Color::RED)
         {
@@ -222,7 +234,7 @@ private:
                     node = grandParent;
                     parent = node->mParent;
                 }
-                 else
+                else
                 {
                     if (node == parent->mLeft)
                     {
@@ -239,41 +251,43 @@ private:
         _set_color(_data._root->left, BLACK);
     }
 
-    void EraseFixRB(NodeElement* node)
+    void EraseFixRB(NodeElement *node)
     {
         // emmmm, too complex, just see: https://www.programiz.com/dsa/deletion-from-a-red-black-tree
     }
 
 public:
-    void Swap(NodeElement* node1, NodeElement* node2)
+    void Swap(NodeElement *node1, NodeElement *node2)
     {
-
     }
 
-    NodeElement* Insert(const KeyT& key, const ValueT& value)
+    NodeElement *Insert(const KeyT &key, const ValueT &value)
     {
         // 1. insert the new node in a suitable pos like binarySearchTree
         // 2. set color of new node is red
         // 3. fix rbTree
 
-        if (mImpl.mRoot == nullptr) {
+        if (mImpl.mRoot == nullptr)
+        {
             mImpl.CreateRoot();
         }
 
         // find pos
-        NodeElement* parent = mImpl.mRoot;
+        NodeElement *parent = mImpl.mRoot;
         C less;
-        NodeElement* node = mImpl.mRoot->mLeft;
-        while(node != nullptr)
+        NodeElement *node = mImpl.mRoot->mLeft;
+        while (node != nullptr)
         {
             parent = node;
-            if (less(key, node->mKey)) {
+            if (less(key, node->mKey))
+            {
                 node = node->mLeft;
             }
-            else if (less(node->mKey, key)) {
+            else if (less(node->mKey, key))
+            {
                 node = node->mRight;
             }
-            else 
+            else
             {
                 node->mValue = value;
                 return node;
@@ -281,25 +295,29 @@ public:
         }
 
         // create new nodeElement
-        NodeElement* newNode = new NodeElement(mImpl);
+        NodeElement *newNode = new NodeElement(mImpl);
         newNode->mParent = parent;
         newNode->mKey = key;
         newNode->mValue = value;
 
-        if (parent == mImpl.mRoot || less(key, parent->mKey)) {
+        if (parent == mImpl.mRoot || less(key, parent->mKey))
+        {
             parent->mLeft = newNode;
         }
-        else {
+        else
+        {
             parent->mRight = newNode;
         }
 
         // set successor and predecessor
         newNode->mNext = newNode->GetSuccessor();
         newNode->mPrev = newNode->GetPredecessor();
-        if (newNode->mNext) {
+        if (newNode->mNext)
+        {
             newNode->mNext->mPrev = newNode;
         }
-        if (newNode->mPrev) {
+        if (newNode->mPrev)
+        {
             newNode->mPrev->mNext = newNode;
         }
 
@@ -309,18 +327,19 @@ public:
         return newNode;
     }
 
-    void Erase(NodeElement* target)
+    void Erase(NodeElement *target)
     {
         // 找到一个子节点或者后继节点，和当前节点交换删除，同时根据情况修复RBTree
-        if (mImpl.mRoot == nullptr || target == nullptr) {
+        if (mImpl.mRoot == nullptr || target == nullptr)
+        {
             return;
         }
 
         // rp为Removed节点，如果当前节点非满节点，则rp=target，否则rp=target->mNext
-        NodeElement* rp = target->mLeft == nullptr || target->mRight == nullptr ? target : target->mNext;
-        NodeElement* node = rp->mLeft != nullptr ? rp->mRight : rp->mLeft;
-        NodeElement* slibling = nullptr;
-        if (rp == rp->mParent->mLeft) 
+        NodeElement *rp = target->mLeft == nullptr || target->mRight == nullptr ? target : target->mNext;
+        NodeElement *node = rp->mLeft != nullptr ? rp->mRight : rp->mLeft;
+        NodeElement *slibling = nullptr;
+        if (rp == rp->mParent->mLeft)
         {
             rp->mParent->mLeft = node;
             slibling = rp->mParent->mRight;
@@ -332,7 +351,7 @@ public:
         }
 
         // PS：color of nil is black
-        if(node->mColor == Color::RED)  // rp->color must is Black,此时删除rp，设置node为black
+        if (node->mColor == Color::RED) // rp->color must is Black,此时删除rp，设置node为black
         {
             node->mParent = rp->mParent;
             node->SetColor(Color::BLACK);
@@ -342,13 +361,16 @@ public:
             EraseFixRB(slibling);
         }
 
-        if (rp != target) {
+        if (rp != target)
+        {
             Swap(rp, target);
         }
-        if (target->mNext) {
+        if (target->mNext)
+        {
             target->mNext->mPrev = target->mPrev;
         }
-        if (target->mPrev) {
+        if (target->mPrev)
+        {
             target->mPrev->mNext = target->mNext;
         }
         delete target;
