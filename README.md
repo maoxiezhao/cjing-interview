@@ -52,7 +52,7 @@ ASIO浅析（ICOP和Epoll） <a href ="https://zhuanlan.zhihu.com/p/55503053">[h
 ****
 ## MultiThread
 基于Fiber的JobSystem实现 <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/docs/Fiber_jobsystem.docx">[here]</a>  
-std::memory_order的解释 <a href ="https://www.zhihu.com/question/24301047">[here]</a>  
+C++内存模型 <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/other/C++内存模型.md">[here]</a>  
 一种无锁队列的实现 <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/mpmc_bounded_queue.h">[here]</a>  
 
 ****
