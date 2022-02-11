@@ -1,5 +1,6 @@
 # cjing-interview
-
+用于记录存档或者面试用的部分资料，持续更新中
+****
 ## Algorithm
 ### Sort
 QuickSort <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/sort/quickSort.h">[here]</a>  
@@ -50,9 +51,9 @@ ASIO浅析（ICOP和Epoll） <a href ="https://zhuanlan.zhihu.com/p/55503053">[h
 
 ****
 ## MultiThread
-基于Fiber的JobSystem实现  
-std::memory_order的解释
-一种无锁队列的实现
+基于Fiber的JobSystem实现 <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/docs/Fiber_jobsystem.docx">[here]</a> 
+std::memory_order的解释 <a href ="https://www.zhihu.com/question/24301047">[here]</a>  
+一种无锁队列的实现 <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/mpmc_bounded_queue.h">[here]</a>  
 
 ****
 ## AI 
