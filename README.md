@@ -1,7 +1,7 @@
 # cjing-interview
-用于记录存档或者面试用的部分资料，持续更新中
+用于记录存档或者面试用的部分资料，部分待补全，持续更新中...
 ****
-## Algorithm
+## Basic algorithm
 ### Sort
 QuickSort <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/sort/quickSort.h">[here]</a>  
 MergeSort <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/sort/mergeSort.h">[here]</a>  
@@ -20,7 +20,7 @@ B-Tree <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/alg
 RedBlack Tree <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/rbTree.h">[here]</a>  
 Graph <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/graph.h">[here]</a>  
 SegmentTree <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/segmentTree.h">[here]</a>  
-KDTreee <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/segmentTree.h">[here]</a>  
+KDTreee <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/kdTree.h">[here]</a>  
 
 ### Pattern
 Singleton <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/pattern/singleton.h">[here]</a>  
@@ -51,7 +51,7 @@ ASIO浅析（ICOP和Epoll） <a href ="https://zhuanlan.zhihu.com/p/55503053">[h
 
 ****
 ## MultiThread
-基于Fiber的JobSystem实现 <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/docs/Fiber_jobsystem.docx">[here]</a> 
+基于Fiber的JobSystem实现 <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/docs/Fiber_jobsystem.docx">[here]</a>  
 std::memory_order的解释 <a href ="https://www.zhihu.com/question/24301047">[here]</a>  
 一种无锁队列的实现 <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/container/mpmc_bounded_queue.h">[here]</a>  
 
@@ -61,11 +61,18 @@ std::memory_order的解释 <a href ="https://www.zhihu.com/question/24301047">[h
 
 ****
 ## Rendering
-基于Vulkan的RenderGraph实现
+基于Vulkan的RenderGraph实现  
+Forward+的pipeline实现
 
 ****
 ## Animation
-Animation retarget
+Animation retarget  
+GPU的骨骼动画
+
+****
+## Game
+简单的ECS系统实现  
+简单的局部规避实现（非RVO算法）
 
 ****
 ## Tips 
@@ -87,4 +94,4 @@ C++对象模型 <a href ="https://www.cnblogs.com/QG-whz/p/4909359.html">[here]<
 线段树: SegmentTree <a href ="https://blog.csdn.net/zearot/article/details/48299459">[here]</a>  
 C++面试总结（多方面） <a href ="https://www.cnblogs.com/QG-whz/p/4909359.html">[here]</a>  
 C#面试总结（基础）<a href ="https://zhuanlan.zhihu.com/p/56522099">[here]</a>  
-线段树: SegmentTree <a href ="https://blog.csdn.net/lxin_liu/category_8859795.html">[here]</a>  
+*线段树: SegmentTree <a href ="https://blog.csdn.net/lxin_liu/category_8859795.html">[here]</a>  
