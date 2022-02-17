@@ -1,5 +1,21 @@
 # cjing-interview
-用于记录存档或者面试用的部分资料，部分待补全，持续更新中...
+收集一些面试相关的资料，对一些算法和实现做一个存档，部分待补全，持续更新中...  
+
+  - [Basic algorithm](#basic-algorithm)
+    - [Sort](#sort)
+    - [Data Structures](#data-structures)
+    - [Pattern](#pattern)
+    - [Specific Algorithm](#specific-algorithm)
+  - [Math](#math)
+  - [DataBase](#database)
+  - [Net](#net)
+  - [MultiThread](#multithread)
+  - [AI](#ai)
+  - [Rendering](#rendering)
+  - [Animation](#animation)
+  - [Game](#game)
+  - [Tips](#tips)
+  - [Related links](#related-links)
 ****
 ## Basic algorithm
 ### Sort
@@ -42,6 +58,7 @@ Floyd 判圈算法：(链表判圈) <a href ="https://github.com/maoxiezhao/cjin
 SQL语句练习 <a href ="https://www.nowcoder.com/ta/sql?from=baidusql&bd_vid=11675627489460984601">[here]</a>  
 常用SQL语句 <a href ="https://blog.csdn.net/Ace_2/article/details/85002791">[here]</a>  
 common_sql <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/algorithm/db/common_sqls.sql">[here]</a>  
+LSM Tree解析  <a href ="https://hzhu212.github.io/posts/2d7c5edb/">[here]</a>  
 
 ****
 ## Net
@@ -67,7 +84,7 @@ Forward+的pipeline实现
 ****
 ## Animation
 Animation retarget  
-GPU的骨骼动画
+GPU skinning <a href ="https://github.com/maoxiezhao/cjing-interview/blob/main/src/animation/gpuSkinning.md">[here]</a>  
 
 ****
 ## Game
